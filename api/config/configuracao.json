@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "",
+      "password": "",
+      "database": "db_alura_flix",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "",
+      "password": null,
+      "database": "db_alura_flix",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "",
+      "password": null,
+      "database": "database_production",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }
+  
