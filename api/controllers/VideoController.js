@@ -12,6 +12,15 @@ class VideoController {
         }
     }
 
+    static async videosFree(req, res) {
+        try {
+            const allVideos = await videosServices.getRecordFree();
+            return res.status(200).json(allVideos);
+        } catch (error) {
+            return res.status(500).json(error.message);
+        }
+    }
+
     static async getVideo(req, res) {
         const { id } = req.params;
         try {

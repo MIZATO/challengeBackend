@@ -5,6 +5,7 @@ const CategoriaController = require('../controllers/CategoriaController.js')
 const router = Router()
 router
   .get('/videos', VideoController.getAllVideos)
+  .get('/videos/free', VideoController.videosFree)
   .get('/videos/:id', VideoController.getVideo)
   .get('/videos/search=/:titulo', VideoController.getVideoName)
   .get('/categorias/:categoriaId/videos', VideoController.queryVideosByCategoria)

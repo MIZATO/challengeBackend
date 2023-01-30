@@ -28,5 +28,16 @@ class VideosServices extends Services {
         }
       })
   }
+
+  async getRecordFree() {
+    return await database[this.nameModel]
+      .findAll({
+        where: {
+          [Op.or]: [
+            {id: 1}, {id: 2},{id: 3}
+          ]
+        }
+        });
+}
 }
 module.exports = VideosServices;
